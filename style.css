@@ -1,0 +1,109 @@
+body {
+  background-color: #39302C; /* Dark Brown */
+  color: #B5A49D; /* Muted Light Brown */
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Bebas Neue', sans-serif; /* A bold, cool font */
+  text-shadow: 5px 0 #2B231F;
+  font-size: 8rem;
+  color: #F8EFE3;
+}
+
+.players {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.player-box {
+  background-color: #5C504E;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 40%;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-box.active-player {
+  background-color: #C07B57;
+  color: #39302C;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(192, 123, 87, 0.5);
+}
+
+.player-box.active-player .current-score,
+.player-box.active-player .current-label,
+.player-box.active-player .total-score-box {
+  color: #39302C;
+}
+
+.player-name {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif; /* A clean, modern font */
+}
+
+.dice-img {
+  width: 60%;
+  margin-top: 20px;
+}
+
+.current-score-box {
+  margin-top: 20px;
+  background-color: #7A6965;
+  color: #F8EFE3;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.current-label {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.current-score {
+  font-size: 3rem;
+  font-family: 'Bebas Neue', sans-serif; /* Using the cool heading font for scores as well */
+  margin-top: 5px;
+}
+
+.total-score-box {
+  font-size: 2.5rem;
+  font-family: 'Bebas Neue', sans-serif; /* Using the cool heading font for scores as well */
+  margin-top: 20px;
+}
+
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  font-family: 'Bebas Neue', sans-serif; /* A bold, cool font for buttons */
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border: none;
+  background-color: #C07B57;
+  color: #F8EFE3;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #A3674A;
+}
+
+footer {
+  margin-top: 5%;
+  color: #B5A49D;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; /* A clean, modern font for the footer as well */
+}
